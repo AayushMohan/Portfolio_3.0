@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import BackgroundCircles from "./BackgroundCircles";
 import { Cursor, useTypewriter } from "react-simple-typewriter";
 
@@ -15,8 +16,15 @@ const Hero = (props: Props) => {
     delaySpeed: 200,
   });
   return (
-    <div>
+    <div className="h-screen flex flex-col space-y-8 items-center justify-center text-center overflow-hidden">
       <BackgroundCircles />
+      <Image
+        src="https://avatars.githubusercontent.com/u/66319691?v=4"
+        alt="Aayush Mohan Profile Picture"
+        height={128}
+        width={128}
+        className="relative rounded-full mx-auto object-cover"
+      />
     </div>
   );
 };
