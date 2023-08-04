@@ -33,7 +33,7 @@ const Hero = (props: Props) => {
           & ML Enthusiast
         </h2>
 
-        <h1 className="text-[20px] lg:text-6xl font-semibold px-10">
+        <h1 className="text-[20px] lg:text-6xl font-bold px-10">
           <span className="mr-3">{text}</span>
           <Cursor cursorColor="#F7AB0A" />
         </h1>
