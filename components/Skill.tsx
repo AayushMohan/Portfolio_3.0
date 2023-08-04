@@ -5,7 +5,7 @@ type Props = {};
 
 const Skill = (props: Props) => {
   return (
-    <div className="grid grid-cols-4 md:grid-cols-5 gap-6 md:gap-8 h-1/2 py-5">
+    <div className="grid grid-cols-4 md:grid-cols-5 gap-6 md:gap-10 h-1/2 py-5">
       <Image
         src="https://img.icons8.com/color/48/null/html-5--v1.png"
         alt="HTML"
@@ -92,6 +92,31 @@ const Skill = (props: Props) => {
       <Image
         src="https://img.icons8.com/color/48/null/python--v1.png"
         alt="Python"
+        width="50"
+        height="50"
+      />
+      <Image
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/PyTorch_logo_icon.svg/992px-PyTorch_logo_icon.svg.png?20200318225611"
+        alt="Python"
+        width="40"
+        height="40"
+      />
+
+      <Image
+        src="https://img.icons8.com/color/48/tensorflow.png"
+        alt="C"
+        width="50"
+        height="50"
+      />
+      <Image
+        src="https://img.icons8.com/color/48/numpy.png"
+        alt="Numpy"
+        width="50"
+        height="50"
+      />
+      <Image
+        src="https://img.icons8.com/color/48/pandas.png"
+        alt="Numpy"
         width="50"
         height="50"
       />
