@@ -8,8 +8,8 @@ type Props = {};
 const NewsApp = (props: Props) => {
   return (
     <div>
-      <div className="relative w-full h-screen flex overflow-x-scroll  snap-x snap-mandatory z-20">
-        <div className="w-screen flex-shrink-0 snap-center flex flex-col space-y-5 items-center justify-around p-4 md:py-48 h-screen">
+      <div className="relative w-full h-screen flex snap-x snap-mandatory z-20">
+        <div className="w-screen flex-shrink-0 snap-center flex flex-col space-y-5 items-center justify-around p-4 md:py-56 h-screen">
           <h3 className="uppercase tracking-[20px] text-gray-500 text-xl md:text-4xl md:my-8 my-2">
             Projects
           </h3>
