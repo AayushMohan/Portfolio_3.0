@@ -17,7 +17,7 @@ const Projects = (props: Props) => {
     >
       <div className="flex flex-row">
         <NewsApp />
-        {/* <OpenSea /> */}
+        <OpenSea />
         {/*<Readerse />
         <Natours /> */}
       </div>
