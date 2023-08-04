@@ -1,7 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
-// import Image from "next/image";
-// import NewsApp from "./Projects/NewsApp";
+import NewsApp from "./Projects/NewsApp";
 // import OpenSea from "./Projects/OpenSea";
 // import Readerse from "./Projects/Readerse";
 // import Natours from "./Projects/Natours";
@@ -17,8 +16,8 @@ const Projects = (props: Props) => {
       className="h-screen relative flex flex-col text-left md:flex-row max-w-full justify-evenly mx-auto items-center z-0"
     >
       <div className="flex flex-row">
-        {/* <NewsApp />
-        <OpenSea />
+        <NewsApp />
+        {/* <OpenSea />
         <Readerse />
         <Natours /> */}
       </div>
