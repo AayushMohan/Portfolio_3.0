@@ -3,6 +3,7 @@ import "./globals.css";
 import type { Metadata } from "next";
 import { Open_Sans } from "next/font/google";
 import Hero from "@/components/Hero";
+import About from "@/components/About";
 
 const open_sans = Open_Sans({ subsets: ["latin"] });
 
@@ -25,6 +26,7 @@ export default function RootLayout({
         {/* Hero */}
         <Hero />
         {/* About */}
+        <About />
         {/* Skills */}
         {/* Projects */}
         {/* Blogs */}
