@@ -1,3 +1,4 @@
+import BackgroundCircles from "@/components/BackgroundCircles";
 import Header from "@/components/Header";
 
 export default function Home() {
@@ -6,6 +7,7 @@ export default function Home() {
       {/* Header */}
       <Header />
       {/* Hero */}
+      <BackgroundCircles />
       {/* About */}
       {/* Skills */}
       {/* Projects */}
