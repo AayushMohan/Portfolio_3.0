@@ -5,7 +5,7 @@ type Props = {};
 const OpenSea = (props: Props) => {
   return (
     <div>
-      <div className="relative w-full h-screen flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20">
+      <div className="relative w-full h-screen flex snap-x snap-mandatory z-20">
         <div className="w-screen flex-shrink-0 snap-center flex flex-col space-y-5 items-center justify-around p-4 md:py-48 h-screen">
           <h3 className="uppercase tracking-[20px] text-gray-500 text-xl md:text-4xl md:my-8 my-2">
             Projects
