@@ -1,7 +1,7 @@
 "use client";
 import { motion } from "framer-motion";
 import NewsApp from "./Projects/NewsApp";
-// import OpenSea from "./Projects/OpenSea";
+import OpenSea from "./Projects/OpenSea";
 // import Readerse from "./Projects/Readerse";
 // import Natours from "./Projects/Natours";
 
@@ -17,8 +17,8 @@ const Projects = (props: Props) => {
     >
       <div className="flex flex-row">
         <NewsApp />
-        {/* <OpenSea />
-        <Readerse />
+        {/* <OpenSea /> */}
+        {/*<Readerse />
         <Natours /> */}
       </div>
     </motion.div>

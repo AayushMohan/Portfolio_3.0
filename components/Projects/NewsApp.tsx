@@ -8,7 +8,7 @@ type Props = {};
 const NewsApp = (props: Props) => {
   return (
     <div>
-      <div className="relative w-full h-screen flex snap-x snap-mandatory z-20  scrollbar-track-gray-400/20 scrollbar-thumb-[#F7AB0A]/80 scrollbar-thin">
+      <div className="relative w-full h-screen flex overflow-x-scroll  snap-x snap-mandatory z-20">
         <div className="w-screen flex-shrink-0 snap-center flex flex-col space-y-5 items-center justify-around p-4 md:py-48 h-screen">
           <h3 className="uppercase tracking-[20px] text-gray-500 text-xl md:text-4xl md:my-8 my-2">
             Projects
@@ -22,7 +22,7 @@ const NewsApp = (props: Props) => {
             src="https://cdn.sanity.io/images/p31j23cd/production/8ba754197bf8973a5bebd4220605e4f5b6053830-3104x1788.png?w=2000&fit=max&auto=format&dpr=2"
             width="350"
             height="450"
-            className=" md:mr-0 rounded-lg md:w-[500px] md:h-[380px] object-cover"
+            className=" md:mr-0 rounded-lg md:w-[450px] md:h-[480px] object-cover"
           />
 
           <div className="space-y-10 px-0 md:px-10 max-w-6xl md:pb-4">
@@ -72,7 +72,7 @@ const NewsApp = (props: Props) => {
               applications with a clean codebase.
             </p>
           </div>
-          <div className="flex justify-evenly space-x-10 items-center">
+          <div className="flex justify-evenly space-x-5 items-center">
             <Link
               href="https://news-app-sigma-khaki.vercel.app/"
               target="_blank"
@@ -82,11 +82,11 @@ const NewsApp = (props: Props) => {
               </button>
             </Link>
 
-            <button className="link_btn p-3 px-4 rounded-md cursor-pointer bg-white/75 hover:bg-white text-black">
-              <Link href="https://github.com/AayushMohan/news-app">
+            <Link href="https://github.com/AayushMohan/news-app">
+              <button className="link_btn p-3 px-4 rounded-md cursor-pointer bg-white/75 hover:bg-white text-black">
                 Github Repo
-              </Link>
-            </button>
+              </button>
+            </Link>
           </div>
         </div>
       </div>
