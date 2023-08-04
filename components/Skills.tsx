@@ -1,6 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
-// import Skill from "./Skill";
+import Skill from "./Skill";
 
 type Props = {};
 
@@ -19,7 +19,9 @@ const Skills = (props: Props) => {
       {/* <h3 className="absolute top-36 uppercase tracking-[3px] text-gray-500 text-sm mx-8">
         Hover over a skill for current proficiency
       </h3> */}
-      <div>{/* <Skill /> */}</div>
+      <div>
+        <Skill />
+      </div>
     </motion.div>
   );
 };
