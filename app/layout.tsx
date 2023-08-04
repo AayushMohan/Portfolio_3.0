@@ -4,6 +4,7 @@ import type { Metadata } from "next";
 import { Open_Sans } from "next/font/google";
 import Hero from "@/components/Hero";
 import About from "@/components/About";
+import Skills from "@/components/Skills";
 
 const open_sans = Open_Sans({ subsets: ["latin"] });
 
@@ -28,6 +29,7 @@ export default function RootLayout({
         {/* About */}
         <About />
         {/* Skills */}
+        <Skills />
         {/* Projects */}
         {/* Blogs */}
         {/* Contact Me*/}
