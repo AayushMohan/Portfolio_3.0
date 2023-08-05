@@ -1,11 +1,18 @@
 "use client";
 import { motion } from "framer-motion";
-import NewsApp from "./Projects/NewsApp";
-import OpenSea from "./Projects/OpenSea";
-// import Readerse from "./Projects/Readerse";
-// import Natours from "./Projects/Natours";
+import Project from "./Project";
 
 type Props = {};
+
+const projects = [
+  {
+    title: "NewsApp",
+    description: "A news app built with React",
+    image: "",
+    liveUrl: "",
+    githubUrl: "",
+  },
+];
 
 const Projects = (props: Props) => {
   return (
@@ -16,10 +23,7 @@ const Projects = (props: Props) => {
       className="h-screen relative flex flex-col text-left md:flex-row max-w-full justify-evenly mx-auto items-center z-0"
     >
       <div className="flex flex-row">
-        <NewsApp />
-        <OpenSea />
-        {/*<Readerse />
-        <Natours /> */}
+        <Project projects={projects} />
       </div>
     </motion.div>
   );
