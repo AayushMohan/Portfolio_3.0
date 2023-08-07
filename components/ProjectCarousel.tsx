@@ -28,7 +28,33 @@ const ProjectCarousel: React.FC<ProjectCarouselProps> = ({ projects }) => {
     <div>
       <Slider {...settings} />
       {projects.map((project, index) => (
-        <div key={index} className="p-4"></div>
+        <div key={index} className="p-4">
+          <h2>{project.name}</h2>
+          <p>{project.description}</p>
+
+          <div className="flex space-x-4">
+            {project.liveUrl && (
+              <a
+                href={project.liveUrl}
+                target="_blank"
+                rel="noop noreferrer"
+                className=""
+              >
+                Live URL
+              </a>
+            )}
+            {project.codebaseUrl && (
+              <a
+                href={project.codebaseUrl}
+                target="_blank"
+                rel="noop noreferrer"
+                className=""
+              >
+                Code Base
+              </a>
+            )}
+          </div>
+        </div>
       ))}
     </div>
   );
