@@ -1,9 +1,14 @@
-import React from "react";
+"use client";
+import { Social } from "@/socials";
+import Link from "next/link";
+import { SocialIcon } from "react-social-icons";
 
-type Props = {};
+type Props = {
+  socials: Social[];
+};
 
-const Header = (props: Props) => {
-  return <div></div>;
+const Header = ({ socials }: Props) => {
+  return <header></header>;
 };
 
 export default Header;

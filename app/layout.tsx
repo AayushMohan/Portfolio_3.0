@@ -9,6 +9,7 @@ import projects from "../projects";
 import Projects from "@/components/Projects";
 import Blogs from "@/components/Blogs";
 import ContactMe from "@/components/ContactMe";
+import socials from "@/socials";
 
 const open_sans = Open_Sans({ subsets: ["latin"] });
 
@@ -27,7 +28,7 @@ export default function RootLayout({
       <body className={open_sans.className}>
         {" "}
         {/* Header */}
-        <Header />
+        <Header socials={socials} />
         {/* Hero */}
         <Hero />
         {/* About */}

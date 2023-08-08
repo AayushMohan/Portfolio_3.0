@@ -2,7 +2,6 @@
 import { Project } from "@/projects";
 import React, { useState } from "react";
 import { motion } from "framer-motion";
-import Link from "next/link";
 
 type Props = {
   projects: Project[];
