@@ -20,7 +20,7 @@ const projects: Project[] = [
     codebaseUrl: "https://github.com/AayushMohan/news-app",
   },
   {
-    name: 'Project 2',
+    name: 'OpenSea Clone',
     description: 'Description for Project 2',
     liveUrl: 'https://www.example.com/project2',
     imageUrl: "https://cdn.sanity.io/images/p31j23cd/production/73257f0b516c4df9a372565178b86b97b9838771-3104x1788.png",
