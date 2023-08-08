@@ -28,7 +28,7 @@ const projects: Project[] = [
   }, {
     name: 'Natours Project',
     description: 'This Project is a Simple landing page for a Travel agency. Which is built focusing on the animations using CSS and SCSS without JavaScript.',
-    liveUrl: 'https://www.example.com/project2',
+    liveUrl: 'https://aayushmohan.github.io/Natours-Project/',
     imageUrl: "https://cdn.sanity.io/images/p31j23cd/production/8ba754197bf8973a5bebd4220605e4f5b6053830-3104x1788.png?w=2000&fit=max&auto=format&dpr=2",
     codebaseUrl: 'https://github.com/yourusername/project2',
   },
