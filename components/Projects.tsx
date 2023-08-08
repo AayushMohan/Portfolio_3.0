@@ -1,6 +1,6 @@
 "use client";
 import { Project } from "@/projects";
-import React from "react";
+import React, { useState } from "react";
 import { motion } from "framer-motion";
 
 type Props = {
@@ -8,6 +8,8 @@ type Props = {
 };
 
 const Projects = ({ projects }: Props) => {
+  const totalProjects = projects.length;
+
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -35,6 +37,14 @@ const Projects = ({ projects }: Props) => {
               height="450"
               className="mr-4 md:mr-0 rounded-lg md:w-[500px] md:h-[380px]"
             />
+
+            <div className="space-y-10 px-0 md:px-10 max-w-6xl md:pb-4">
+              <h4 className="text-xl md:text-2xl font-semibold text-center">
+                <span className="underline decoration-[#F7AB0A]/50">
+                  Case Study {i + 1} of {totalProjects}
+                </span>
+              </h4>
+            </div>
           </div>
         ))}
       </div>
