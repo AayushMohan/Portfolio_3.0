@@ -5,8 +5,7 @@ import { Open_Sans } from "next/font/google";
 import Hero from "@/components/Hero";
 import About from "@/components/About";
 import Skills from "@/components/Skills";
-import ProjectCarousel from "@/components/Projects";
-import projects, { Project } from "../projects";
+import projects from "../projects";
 import Projects from "@/components/Projects";
 
 const open_sans = Open_Sans({ subsets: ["latin"] });
