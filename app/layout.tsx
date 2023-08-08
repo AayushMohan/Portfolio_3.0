@@ -8,6 +8,7 @@ import Skills from "@/components/Skills";
 import projects from "../projects";
 import Projects from "@/components/Projects";
 import Blogs from "@/components/Blogs";
+import ContactMe from "@/components/ContactMe";
 
 const open_sans = Open_Sans({ subsets: ["latin"] });
 
@@ -38,6 +39,7 @@ export default function RootLayout({
         {/* Blogs */}
         <Blogs />
         {/* Contact Me*/}
+        <ContactMe />
         {children}
       </body>
     </html>
