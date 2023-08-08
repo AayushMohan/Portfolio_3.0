@@ -25,6 +25,7 @@ const Hero = (props: Props) => {
         height={128}
         width={128}
         className="relative rounded-full mx-auto object-cover"
+        priority
       />
 
       <div className="z-20">

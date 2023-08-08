@@ -57,7 +57,7 @@ const Projects = ({ projects }: Props) => {
                     href={projects.liveUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600"
+                    className="px-4 py-2 bg-[#F7AB0A]/50 text-white rounded hover:bg-[#F7AB0A]"
                   >
                     Live Demo
                   </a>

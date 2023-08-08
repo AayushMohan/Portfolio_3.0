@@ -29,19 +29,19 @@ export default function RootLayout({
         <section className="bg-black text-white h-screen snap-y snap-mandatory overflow-y-scroll overflow-x-hidden z-0">
           <Header socials={socials} />
 
-          <section id="Hero" className="snap-start">
+          <section id="hero" className="snap-start">
             <Hero />
           </section>
 
-          <section id="About" className="snap-center">
+          <section id="about" className="snap-center">
             <About />
           </section>
 
-          <section id="Skills" className="snap-end">
+          <section id="skills" className="snap-end">
             <Skills />
           </section>
 
-          <section id="Projects" className="snap-start">
+          <section id="projects" className="snap-start">
             <Projects projects={projects} />
           </section>
 
@@ -49,7 +49,7 @@ export default function RootLayout({
             <Blogs />
           </section>
 
-          <section id="Contact" className="snap-end">
+          <section id="Contact" className="snap-start">
             <ContactMe />
           </section>
           {children}
