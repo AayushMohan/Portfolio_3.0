@@ -24,6 +24,17 @@ const Projects = ({ projects }: Props) => {
             <h3 className="uppercase tracking-[20px] text-gray-500 text-2xl md:text-4xl md:my-8 my-20">
               Projects
             </h3>
+            <motion.img
+              initial={{ y: -300, opacity: 0 }}
+              transition={{ duration: 1.2 }}
+              whileInView={{ y: 0, opacity: 1 }}
+              viewport={{ once: true }}
+              src={projects.imageUrl}
+              alt={projects.name}
+              width="450"
+              height="450"
+              className="mr-4 md:mr-0 rounded-lg md:w-[500px] md:h-[380px]"
+            />
           </div>
         ))}
       </div>
