@@ -26,8 +26,8 @@ const projects: Project[] = [
     imageUrl: "https://cdn.sanity.io/images/p31j23cd/production/73257f0b516c4df9a372565178b86b97b9838771-3104x1788.png",
     codebaseUrl: 'https://github.com/AayushMohan/opensea-blockchain-clone',
   }, {
-    name: 'Project 3',
-    description: 'Description for Project 3',
+    name: 'Natours Project',
+    description: '',
     liveUrl: 'https://www.example.com/project2',
     imageUrl: "https://cdn.sanity.io/images/p31j23cd/production/8ba754197bf8973a5bebd4220605e4f5b6053830-3104x1788.png?w=2000&fit=max&auto=format&dpr=2",
     codebaseUrl: 'https://github.com/yourusername/project2',
