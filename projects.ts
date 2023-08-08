@@ -24,7 +24,7 @@ const projects: Project[] = [
     description: "OpenSea Blockchain Clone: Seamlessly explore blockchain assets & NFTs. Crafted using Next.js, React, Tailwind CSS, Web 3, and powered by Sanity CMS. Showcasing my prowess in modern web development, delivering user-centric design and efficient codebase.",
     liveUrl: 'https://opensea-blockchain-clone-psi.vercel.app/',
     imageUrl: "https://cdn.sanity.io/images/p31j23cd/production/73257f0b516c4df9a372565178b86b97b9838771-3104x1788.png",
-    codebaseUrl: 'https://github.com/yourusername/project2',
+    codebaseUrl: 'https://github.com/AayushMohan/opensea-blockchain-clone',
   }, {
     name: 'Project 3',
     description: 'Description for Project 3',
