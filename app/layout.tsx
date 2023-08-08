@@ -45,9 +45,9 @@ export default function RootLayout({
             <Projects projects={projects} />
           </section>
 
-          <section id="Blogs" className="snap-center">
+          {/* <section id="Blogs" className="snap-center">
             <Blogs />
-          </section>
+          </section> */}
 
           <section id="Contact" className="snap-start">
             <ContactMe />
