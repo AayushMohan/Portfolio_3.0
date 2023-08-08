@@ -21,7 +21,7 @@ const projects: Project[] = [
   },
   {
     name: 'OpenSea Clone',
-    description: '"OpenSea Blockchain Clone is a dynamic web solution that empowers users to effortlessly delve into the realm of blockchain-driven digital assets and NFTs. Developed with a fusion of cutting-edge technologies such as Next.js, React, Tailwind CSS, Web 3 integration, and Sanity CMS, this undertaking serves as a testament to my proficiency in modern web development. It showcases my ability to engineer intricate systems with an elegant code structure, highlighting my dedication to creating sophisticated applications that provide an exceptional user experience."',
+    description: "OpenSea Blockchain Clone: Seamlessly explore blockchain assets & NFTs. Crafted using Next.js, React, Tailwind CSS, Web 3, and powered by Sanity CMS. Showcasing my prowess in modern web development, delivering user-centric design and efficient codebase.",
     liveUrl: 'https://opensea-blockchain-clone-psi.vercel.app/',
     imageUrl: "https://cdn.sanity.io/images/p31j23cd/production/73257f0b516c4df9a372565178b86b97b9838771-3104x1788.png",
     codebaseUrl: 'https://github.com/yourusername/project2',
