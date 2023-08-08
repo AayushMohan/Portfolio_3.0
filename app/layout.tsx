@@ -26,22 +26,34 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={open_sans.className}>
-        {" "}
-        {/* Header */}
-        <Header socials={socials} />
-        {/* Hero */}
-        <Hero />
-        {/* About */}
-        <About />
-        {/* Skills */}
-        <Skills />
-        {/* Projects */}
-        <Projects projects={projects} />
-        {/* Blogs */}
-        <Blogs />
-        {/* Contact Me*/}
-        <ContactMe />
-        {children}
+        <section className="bg-black text-white h-screen snap-y snap-mandatory overflow-y-scroll overflow-x-hidden z-0">
+          <Header socials={socials} />
+
+          <section id="Hero" className="snap-start">
+            <Hero />
+          </section>
+
+          <section id="About" className="snap-center">
+            <About />
+          </section>
+
+          <section id="Skills" className="snap-end">
+            <Skills />
+          </section>
+
+          <section id="Projects" className="snap-start">
+            <Projects projects={projects} />
+          </section>
+
+          <section id="Blogs" className="snap-center">
+            <Blogs />
+          </section>
+
+          <section id="Contact" className="snap-end">
+            <ContactMe />
+          </section>
+          {children}
+        </section>
       </body>
     </html>
   );
