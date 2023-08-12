@@ -1,10 +1,10 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import MediumCards from "./MediumCards";
-import Image from "next/image";
 import Link from "next/link";
 import { ArrowLongRightIcon } from "@heroicons/react/24/solid";
 import { mediumURL } from "@/app/api/route";
+import { socialProfile } from "@/app/api/route";
 type Props = {};
 
 const Blogs = (props: Props) => {
@@ -41,7 +41,7 @@ const Blogs = (props: Props) => {
         </div>
 
         <div className="flex">
-          <Link href="https://medium.com/@aayushmohan" className=" ">
+          <Link href={socialProfile.medium} className=" ">
             <ArrowLongRightIcon className="bg-white " />
           </Link>
         </div>

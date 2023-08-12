@@ -4,4 +4,4 @@ const socialProfile = {
  medium: "https://medium.com/@aayushmohan",
 }
 
-export { mediumURL }
+export { mediumURL, socialProfile }
