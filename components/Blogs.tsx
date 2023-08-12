@@ -3,11 +3,12 @@ import React, { useEffect, useState } from "react";
 import MediumCards from "./MediumCards";
 import Link from "next/link";
 import { ArrowLongRightIcon } from "@heroicons/react/24/solid";
-import { mediumURL } from "@/app/api/route";
-import { socialProfile } from "@/app/api/route";
 type Props = {};
 
 const Blogs = (props: Props) => {
+  const mediumURL =
+    "https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@aayushmohan";
+
   const [mediumData, setMediumData] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState(null);
@@ -41,7 +42,7 @@ const Blogs = (props: Props) => {
         </div>
 
         <div className="flex">
-          <Link href={socialProfile.medium} className=" ">
+          <Link href="https://medium.com/@aayushmohan" className=" ">
             <ArrowLongRightIcon className="bg-white " />
           </Link>
         </div>
