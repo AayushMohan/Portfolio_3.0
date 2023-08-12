@@ -10,25 +10,16 @@ const Blogs = (props: Props) => {
     "https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@aayushmohan";
 
   const [mediumData, setMediumData] = useState([]);
-  const [isLoading, setIsLoading] = useState(true);
-  const [error, setError] = useState(null);
 
   useEffect(() => {
-    setIsLoading(true);
-    setError(null);
     fetch(mediumURL)
       .then((res) => res.json())
       .then((response) => {
         setMediumData(response.items);
-        setIsLoading(false);
-      })
-      .catch((err) => {
-        setError(err);
-        setIsLoading(false);
       });
   }, []);
   return (
-    <div className="h-screen">
+    <div className="h-screen overflow-hidden md:overflow-visible">
       <h1 className="text-center uppercase tracking-[12px] md:tracking-[20px] text-gray-500 text-4xl mt-40">
         Blogs
       </h1>
