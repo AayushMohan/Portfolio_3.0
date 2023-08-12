@@ -4,7 +4,7 @@ import About from "@/components/About";
 import Skills from "@/components/Skills";
 import projects from "../projects";
 import Projects from "@/components/Projects";
-// import Blogs from "@/components/Blogs";
+import Blogs from "@/components/Blogs";
 import ContactMe from "@/components/ContactMe";
 import socials from "@/socials";
 
@@ -29,9 +29,9 @@ export default function Home({ post }: any) {
         <Projects projects={projects} />
       </section>
 
-      {/* <section id="Blogs" className="snap-center">
+      <section id="Blogs" className="snap-center">
         <Blogs />
-      </section> */}
+      </section>
 
       <section id="Contact" className="snap-start">
         <ContactMe />

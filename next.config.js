@@ -6,6 +6,7 @@ const nextConfig = {
       "img.icons8.com",
       "res.cloudinary.com",
       "upload.wikimedia.org",
+      "cdn-images-1.medium.com",
     ],
   },
 };
