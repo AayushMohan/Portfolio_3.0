@@ -9,6 +9,10 @@ const nextConfig = {
       "cdn-images-1.medium.com",
     ],
   },
+  publicRuntimeConfig: {
+    // This will allow crawlers to access your app.
+    allowlist: ["/"],
+  },
 };
 
 module.exports = nextConfig;
