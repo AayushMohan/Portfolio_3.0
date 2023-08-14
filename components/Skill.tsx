@@ -5,7 +5,7 @@ type Props = {};
 
 const Skill = (props: Props) => {
   return (
-    <div className="grid grid-cols-4 md:grid-cols-5 gap-6 md:gap-10 h-1/2 py-5">
+    <div className="grid grid-cols-4 md:grid-cols-5 gap-6 md:gap-10 h-1/2 py-5 mt-10">
       <Image
         src="https://img.icons8.com/color/48/null/html-5--v1.png"
         alt="HTML"
