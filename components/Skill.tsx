@@ -98,8 +98,9 @@ const Skill = (props: Props) => {
       <Image
         src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/PyTorch_logo_icon.svg/992px-PyTorch_logo_icon.svg.png?20200318225611"
         alt="Python"
-        width="50"
-        height="50"
+        width="40"
+        height="40"
+        className="ml-1.5"
       />
 
       <Image
