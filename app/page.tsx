@@ -29,11 +29,11 @@ export default function Home({ post }: any) {
         <Projects projects={projects} />
       </section>
 
-      <section id="Blogs" className="snap-center">
+      <section id="blogs" className="snap-center">
         <Blogs />
       </section>
 
-      <section id="Contact" className="snap-start">
+      <section id="contact" className="snap-start">
         <ContactMe />
       </section>
     </main>
