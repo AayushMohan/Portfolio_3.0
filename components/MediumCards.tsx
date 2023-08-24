@@ -41,7 +41,7 @@ const MediumCards = ({ article }: any) => {
             }}
             dangerouslySetInnerHTML={{ __html: descriptionText }}
           />
-          <p className="text-cyan-600">
+          <p className="text-[#F7AB0A]/80">
             {moment(article.pubDate).format("MMMM Do YYYY")}
           </p>
         </div>
