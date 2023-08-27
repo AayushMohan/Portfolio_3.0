@@ -29,8 +29,6 @@ export default function Home({ post }: any) {
         <Projects projects={projects} />
       </section>
 
-      <section></section>
-
       <section id="blogs" className="snap-center">
         <Blogs />
       </section>
