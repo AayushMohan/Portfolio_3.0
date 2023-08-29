@@ -21,7 +21,7 @@ const Projects = ({ projects }: Props) => {
         {projects?.map((projects, i) => (
           <div
             key={i}
-            className="w-screen flex-shrink-0 snap-center flex flex-col items-center justify-around p-4 md:py-48 h-screen"
+            className="w-screen flex-shrink-0 snap-center flex flex-col items-center md:justify-around p-4 md:py-48 h-screen"
           >
             <h3 className="uppercase tracking-[20px] text-gray-500 text-2xl md:text-4xl md:my-8 my-20">
               Projects
@@ -35,7 +35,7 @@ const Projects = ({ projects }: Props) => {
               alt={projects.name}
               width="450"
               height="450"
-              className="mr-4 md:mr-0 rounded-lg md:w-[500px] md:h-[380px]"
+              className="md:mr-0 rounded-lg md:w-[500px] md:h-[380px]"
             />
 
             <div className="space-y-10 px-0 md:px-10 max-w-6xl md:pb-4">
