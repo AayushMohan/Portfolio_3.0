@@ -21,7 +21,7 @@ const Projects = ({ projects }: Props) => {
         {projects?.map((projects, i) => (
           <div
             key={i}
-            className="w-screen flex-shrink-0 snap-center flex flex-col items-center md:justify-around p-4 md:py-48 h-screen"
+            className="w-screen flex-shrink-0 snap-center flex flex-col items-center justify-around p-4 md:py-48 h-screen"
           >
             <h3 className="uppercase tracking-[20px] text-gray-500 text-2xl md:text-4xl md:my-8 my-20">
               Projects
