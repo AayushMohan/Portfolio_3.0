@@ -14,10 +14,10 @@ const MediumCards = ({ article }: any) => {
 
   return (
     <div className="h-screen">
-      <div className="w-96 rounded-lg shadow border-2 border-[#F7AB0A]/50 mx-10 py-3 flex flex-col h-[500px]">
+      <div className="w-96 rounded-lg shadow border-2 border-[#F7AB0A]/50 mx-10 flex flex-col h-[500px]">
         <div>
           <Image
-            className=""
+            className="rounded-lg"
             src={article.thumbnail}
             alt={article.title}
             width={500}
