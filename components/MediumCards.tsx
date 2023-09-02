@@ -24,7 +24,7 @@ const MediumCards = ({ article }: any) => {
             height={300}
           />
         </div>
-        <div className="p-3">
+        <div className="p-3 px-2">
           <Link href={article.link}>
             <h5 className="mb-2 text-xl font-semibold md:text-2xl">
               {article.title}
