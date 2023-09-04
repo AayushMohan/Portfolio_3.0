@@ -20,7 +20,7 @@ const About = (props: Props) => {
         transition={{ duration: 1.2 }}
         whileInView={{ opacity: 1, x: 0 }}
         viewport={{ once: true }}
-        src="https://cdn.sanity.io/images/p31j23cd/production/214b077f7a78bf10d1dd8c47afd9748583c60d51-3008x4624.jpg?w=2000&fit=max&auto=format&dpr=2"
+        src="../assets/am.jpg"
         className="md:mb-0 flex-shrink-0 w-40 h-40 rounded-full object-cover md:rounded-lg md:w-64 md:h-95 xl:w-[400px] xl:h-[500px]"
         alt="User Profile Pic"
       />
