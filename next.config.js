@@ -7,6 +7,7 @@ const nextConfig = {
       "res.cloudinary.com",
       "upload.wikimedia.org",
       "cdn-images-1.medium.com",
+      "cdn.sanity.io",
     ],
   },
   publicRuntimeConfig: {
