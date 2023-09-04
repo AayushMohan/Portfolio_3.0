@@ -25,7 +25,7 @@ const MediumCards = ({ article }: any) => {
           />
         </div>
         <div className="p-3">
-          <Link href={article.link}>
+          <Link href={article.link} target="_blank" rel="noopener noreferrer">
             <h5 className="mb-2 text-xl font-semibold md:text-2xl">
               {article.title}
             </h5>
