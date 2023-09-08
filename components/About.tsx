@@ -11,7 +11,7 @@ const About = (props: Props) => {
       transition={{ duration: 1 }}
       className="flex flex-col relative h-screen text-center md:text-left md:flex-row max-w-7xl px-10 py-10 justify-evenly mx-auto items-center mt-40"
     >
-      <h3 className="text-center md:absolute top-24 md:-ml-16 uppercase tracking-[12px] md:tracking-[20px] text-gray-500 text-4xl">
+      <h3 className="text-center md:absolute top-24 md:-ml-28 uppercase tracking-[12px] md:tracking-[20px] text-gray-500 text-4xl">
         About
       </h3>
 
