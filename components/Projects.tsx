@@ -35,7 +35,7 @@ const Projects = ({ projects }: Props) => {
               alt={projects.name}
               width="450"
               height="450"
-              className="md:mr-0 rounded-lg md:w-[500px] md:h-[380px]"
+              className="md:mr-0 rounded-lg md:w-[500px] md:h-[400px]"
             />
 
             <div className="space-y-10 px-0 md:px-10 max-w-6xl md:pb-4">
