@@ -2,8 +2,8 @@ import React from "react";
 
 type Props = {};
 
-const pages = (props: Props) => {
-  return <div>pages</div>;
+const index = (props: Props) => {
+  return <div>index</div>;
 };
 
-export default pages;
+export default index;
