@@ -12,7 +12,7 @@ const index = (props: Props) => {
         transition={{ duration: 1.5 }}
         className="h-screen pt-10 m-10 flex flex-col space-y-3"
       >
-        <h1>Social Media Activity</h1>
+        <h1 className="text-4xl">Social Media Activity</h1>
       </motion.div>
     </div>
   );
