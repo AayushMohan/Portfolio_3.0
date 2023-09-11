@@ -7,7 +7,7 @@ import Projects from "@/components/Projects";
 import Blogs from "@/components/Blogs";
 import ContactMe from "@/components/ContactMe";
 import socials from "@/socials";
-import SocialActivity from "./socialActivity";
+import SocialActivity from "../components/Activity/SocialActivity";
 
 export default function Home({ post }: any) {
   return (
