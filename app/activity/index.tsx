@@ -11,7 +11,9 @@ const index = (props: Props) => {
         whileInView={{ opacity: 1 }}
         transition={{ duration: 1.5 }}
         className="h-screen pt-10 m-10 flex flex-col space-y-3"
-      ></motion.div>
+      >
+        <h1>Social Media Activity</h1>
+      </motion.div>
     </div>
   );
 };
