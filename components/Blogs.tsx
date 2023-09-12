@@ -24,7 +24,7 @@ const Blogs = (props: Props) => {
         Blogs
       </h1>
       <div className="p-4 flex justify-around mt-20 items-center">
-        <div className="pb-10 md:grid md:grid-cols-3 px-10 m-4">
+        <div className="pb-10 md:grid md:grid-cols- lg:grid-cols-3 px-10 m-4">
           {mediumData.map((article: any, index: number) => (
             <div key={index} className="">
               <MediumCards article={article} className="" />
