@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import MediumCards from "./MediumCards";
 import Link from "next/link";
 import { ArrowLongRightIcon } from "@heroicons/react/24/solid";
@@ -10,6 +10,8 @@ const Blogs = (props: Props) => {
     "https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@aayushmohan";
 
   const [mediumData, setMediumData] = useState([]);
+
+  const ref = useRef(null);
 
   useEffect(() => {
     fetch(mediumURL)
@@ -27,7 +29,7 @@ const Blogs = (props: Props) => {
         <div className="pb-10 md:grid md:grid-cols- lg:grid-cols-3 px-10 m-4">
           {mediumData.map((article: any, index: number) => (
             <div key={index} className="">
-              <MediumCards article={article} className="" />
+              <MediumCards article={article} className="" ref={ref} />
             </div>
           ))}
         </div>
