@@ -34,11 +34,9 @@ const Blogs = (props: Props) => {
           ))}
         </div>
 
-        <div className="flex">
-          <Link href="https://medium.com/@aayushmohan" className=" ">
-            <ArrowLongRightIcon className="bg-white " />
-          </Link>
-        </div>
+        {/* <div className="flex items-center">
+          <ArrowLongRightIcon className="h-10 text-[#F7AB0A]/80" />
+        </div> */}
       </div>
     </div>
   );
