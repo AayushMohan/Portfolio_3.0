@@ -30,6 +30,7 @@ function Header({ socials }: Props) {
             url={social.url}
             fgColor="gray"
             bgColor="transparent"
+            className=""
           />
         ))}
       </motion.div>
