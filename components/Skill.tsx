@@ -112,7 +112,7 @@ const Skill = (props: Props) => {
         alt="Python"
         width="40"
         height="40"
-        className="ml-1.5"
+        className="ml-1.5 translation ease-in-out duration-500 transform hover:scale-110"
       />
 
       <Image
