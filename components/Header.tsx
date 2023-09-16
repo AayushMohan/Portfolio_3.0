@@ -30,7 +30,7 @@ function Header({ socials }: Props) {
             url={social.url}
             fgColor="gray"
             bgColor="transparent"
-            className=""
+            className="translation ease-in-out duration-300 transform hover:scale-125 "
           />
         ))}
       </motion.div>
