@@ -65,7 +65,7 @@ const Skill = (props: Props) => {
         alt="TypeScript"
         height="50"
         width="50"
-        className="rounded-[50%] translation ease-in-out duration-500 transform hover:scale-110"
+        className="rounded-[50%] translation ease-in-out duration-300 transform hover:scale-110"
       />
 
       <Image
