@@ -105,7 +105,7 @@ const Skill = (props: Props) => {
         alt="Python"
         width="50"
         height="50"
-        className="translation ease-in-out duration-500 transform hover:scale-110"
+        className="translation ease-in-out duration-300 transform hover:scale-110"
       />
       <Image
         src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/PyTorch_logo_icon.svg/992px-PyTorch_logo_icon.svg.png?20200318225611"
