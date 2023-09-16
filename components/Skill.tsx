@@ -5,12 +5,13 @@ type Props = {};
 
 const Skill = (props: Props) => {
   return (
-    <div className="grid grid-cols-4 md:grid-cols-5 gap-6 md:gap-10 h-1/2 py-5 mt-10">
+    <div className="grid grid-cols-4 md:grid-cols-5 gap-6 md:gap-10 h-1/2 py-5 mt-10 ">
       <Image
         src="https://img.icons8.com/color/48/null/html-5--v1.png"
         alt="HTML"
         height="50"
         width="50"
+        className="translation ease-in-out duration-500 transform hover:scale-110"
       />
 
       <Image
@@ -18,6 +19,7 @@ const Skill = (props: Props) => {
         alt="CSS"
         height="50"
         width="50"
+        className="translation ease-in-out duration-500 transform hover:scale-110"
       />
 
       <Image
@@ -25,6 +27,7 @@ const Skill = (props: Props) => {
         alt="Sass"
         height="50"
         width="50"
+        className="translation ease-in-out duration-500 transform hover:scale-110"
       />
 
       <Image
@@ -32,6 +35,7 @@ const Skill = (props: Props) => {
         alt="Bootstrap"
         height="50"
         width="50"
+        className="translation ease-in-out duration-500 transform hover:scale-110"
       />
 
       <Image
@@ -39,6 +43,7 @@ const Skill = (props: Props) => {
         alt="Tailwind CSS"
         height="50"
         width="50"
+        className="translation ease-in-out duration-500 transform hover:scale-110"
       />
 
       <Image
@@ -46,19 +51,21 @@ const Skill = (props: Props) => {
         alt="JavaScript"
         height="50"
         width="50"
+        className="translation ease-in-out duration-500 transform hover:scale-110"
       />
       <Image
         src="https://img.icons8.com/plasticine/100/null/react.png"
         alt="React"
         height="50"
         width="50"
+        className="translation ease-in-out duration-500 transform hover:scale-110"
       />
       <Image
         src="https://img.icons8.com/color/48/null/typescript.png"
         alt="TypeScript"
         height="50"
         width="50"
-        className="rounded-[50%]"
+        className="rounded-[50%] translation ease-in-out duration-500 transform hover:scale-110"
       />
 
       <Image
@@ -66,6 +73,7 @@ const Skill = (props: Props) => {
         alt="NextJS"
         height="50"
         width="50"
+        className="translation ease-in-out duration-500 transform hover:scale-110"
       />
 
       <Image
@@ -73,6 +81,7 @@ const Skill = (props: Props) => {
         alt="Redux"
         width="50"
         height="50"
+        className="translation ease-in-out duration-500 transform hover:scale-110"
       />
 
       <Image
@@ -80,6 +89,7 @@ const Skill = (props: Props) => {
         alt="NodeJS"
         width="50"
         height="50"
+        className="translation ease-in-out duration-500 transform hover:scale-110"
       />
 
       <Image
@@ -87,6 +97,7 @@ const Skill = (props: Props) => {
         alt="Firebase"
         width="50"
         height="50"
+        className="translation ease-in-out duration-500 transform hover:scale-110"
       />
 
       <Image
@@ -94,6 +105,7 @@ const Skill = (props: Props) => {
         alt="Python"
         width="50"
         height="50"
+        className="translation ease-in-out duration-500 transform hover:scale-110"
       />
       <Image
         src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/PyTorch_logo_icon.svg/992px-PyTorch_logo_icon.svg.png?20200318225611"

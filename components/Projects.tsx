@@ -57,7 +57,7 @@ const Projects = ({ projects }: Props) => {
                     href={projects.liveUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="px-4 py-2 bg-[#F7AB0A]/50 text-white rounded hover:bg-[#F7AB0A]"
+                    className="px-4 py-2 bg-[#F7AB0A]/50 text-white rounded hover:bg-[#F7AB0A] link_btn"
                   >
                     Live Demo
                   </a>
@@ -67,7 +67,7 @@ const Projects = ({ projects }: Props) => {
                     href={projects.codebaseUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="px-4 py-2 bg-gray-500 text-white rounded hover:bg-gray-600"
+                    className="px-4 py-2 bg-gray-500 text-white rounded hover:bg-gray-600 link_btn"
                   >
                     Codebase
                   </a>
