@@ -58,7 +58,7 @@ const Skill = (props: Props) => {
         alt="React"
         height="50"
         width="50"
-        className="translation ease-in-out duration-500 transform hover:scale-110"
+        className="translation ease-in-out duration-300 transform hover:scale-110"
       />
       <Image
         src="https://img.icons8.com/color/48/null/typescript.png"
