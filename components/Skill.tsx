@@ -97,7 +97,7 @@ const Skill = (props: Props) => {
         alt="Firebase"
         width="50"
         height="50"
-        className="translation ease-in-out duration-500 transform hover:scale-110"
+        className="translation ease-in-out duration-300 transform hover:scale-110"
       />
 
       <Image
