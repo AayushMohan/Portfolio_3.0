@@ -112,7 +112,7 @@ const Skill = (props: Props) => {
         alt="Python"
         width="40"
         height="40"
-        className="ml-1.5 translation ease-in-out duration-500 transform hover:scale-110"
+        className="ml-1.5 translation ease-in-out duration-300 transform hover:scale-110"
       />
 
       <Image
@@ -120,21 +120,21 @@ const Skill = (props: Props) => {
         alt="C"
         width="50"
         height="50"
-        className="translation ease-in-out duration-500 transform hover:scale-110"
+        className="translation ease-in-out duration-300 transform hover:scale-110"
       />
       <Image
         src="https://img.icons8.com/color/48/numpy.png"
         alt="Numpy"
         width="50"
         height="50"
-        className="translation ease-in-out duration-500 transform hover:scale-110"
+        className="translation ease-in-out duration-300 transform hover:scale-110"
       />
       <Image
         src="https://img.icons8.com/color/48/pandas.png"
         alt="Numpy"
         width="50"
         height="50"
-        className="translation ease-in-out duration-500 transform hover:scale-110"
+        className="translation ease-in-out duration-300 transform hover:scale-110"
       />
     </div>
   );
