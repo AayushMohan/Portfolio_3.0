@@ -14,7 +14,7 @@ const MediumCards = ({ article }: any) => {
 
   return (
     <div className="h-screen">
-      <div className="rounded-lg overflow-hidden mx-8 flex flex-col hover:shadow-md hover:border-gradient-shadow">
+      <div className="rounded-lg border-2 border-[#F7AB0A]/50 mx-8 flex flex-col h-[500px] translation ease-in-out duration-500 transform hover:scale-110">
         <div>
           <Image
             className="rounded-lg"
