@@ -22,7 +22,7 @@ const Blogs = (props: Props) => {
   }, []);
   return (
     <div className="h-screen overflow-hidden md:overflow-visible m-4">
-      <h1 className="text-center uppercase tracking-[12px] md:tracking-[20px] text-gray-500 text-4xl mt-24 md:pt-4">
+      <h1 className="text-center uppercase tracking-[12px] md:tracking-[20px] text-gray-500 text-4xl md:text-5xl mt-24 md:pt-4">
         Blogs
       </h1>
       <div className="p-4 flex justify-around mt-20 items-center">
