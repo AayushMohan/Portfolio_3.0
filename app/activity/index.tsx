@@ -1,3 +1,4 @@
+import MediumCards from "@/components/MediumCards";
 import { motion } from "framer-motion";
 import React from "react";
 
@@ -14,6 +15,10 @@ const index = (props: Props) => {
       >
         <h1 className="text-4xl mt-10">Social Media Activity</h1>
         <p>Access to All of My Social Media Post at a Single Place</p>
+
+        <div>
+          <MediumCards />
+        </div>
       </motion.div>
     </div>
   );
