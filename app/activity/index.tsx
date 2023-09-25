@@ -19,6 +19,7 @@ const index = (props: Props) => {
         <div>
           <MediumCards />
         </div>
+        <div></div>
       </motion.div>
     </div>
   );
