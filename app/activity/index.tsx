@@ -1,4 +1,4 @@
-import MediumCards from "@/components/MediumCards";
+import Blogs from "@/components/Blogs";
 import { motion } from "framer-motion";
 import React from "react";
 
@@ -18,7 +18,7 @@ const index = (props: Props) => {
 
         {/* Medium Blogs */}
         <div className="flex flex-row h-auto w-auto justify-between">
-          <MediumCards />
+          <Blogs />
         </div>
         <div></div>
       </motion.div>
