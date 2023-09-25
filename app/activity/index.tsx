@@ -18,6 +18,7 @@ const index = (props: Props) => {
         <div className="grid grid-rows-3 grid-cols-3 gap-6 w-auto justify-between">
           <Blogs />
         </div>
+        <div>home</div>
       </motion.div>
     </div>
   );
