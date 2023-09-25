@@ -23,6 +23,8 @@ const index = (props: Props) => {
 
         {/* Twitter */}
         <div></div>
+
+        {/* Instagram Posts */}
       </motion.div>
     </div>
   );
