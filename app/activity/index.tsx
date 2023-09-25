@@ -17,7 +17,7 @@ const index = (props: Props) => {
         <p>Access to All of My Social Media Post at a Single Place</p>
 
         {/* Medium Blogs */}
-        <div className="grid h-auto w-auto justify-between">
+        <div className="grid grid-rows-3 w-auto justify-between">
           <Blogs />
         </div>
       </motion.div>
