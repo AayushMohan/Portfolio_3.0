@@ -13,8 +13,7 @@ const index = (props: Props) => {
         transition={{ duration: 1.5 }}
         className="h-screen pt-10 m-10 flex flex-col space-y-3"
       >
-        <p>Access to All of My Social Media Post at a Single Place</p>
-
+        <h1 className="text-4xl font-bold">Blogs</h1>
         {/* Medium Blogs */}
         <div className="grid grid-rows-3 grid-cols-3 gap-6 w-auto justify-between">
           <Blogs />
