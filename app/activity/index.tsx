@@ -20,6 +20,8 @@ const index = (props: Props) => {
         <div className="flex flex-row h-auto w-auto justify-between">
           <Blogs />
         </div>
+
+        {/* Twitter */}
         <div></div>
       </motion.div>
     </div>
