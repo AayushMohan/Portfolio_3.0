@@ -16,7 +16,7 @@ const index = (props: Props) => {
         <h1 className="text-4xl mt-10">Social Media Activity</h1>
         <p>Access to All of My Social Media Post at a Single Place</p>
 
-        <div className="flex flex-row h-auto">
+        <div className="flex flex-row h-auto w-auto">
           <MediumCards />
         </div>
         <div></div>
