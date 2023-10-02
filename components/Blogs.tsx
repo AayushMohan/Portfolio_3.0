@@ -29,11 +29,7 @@ const Blogs = (props: Props) => {
         <div className="pb-10 md:grid md:grid-cols- lg:grid-cols-3 px-10 m-4">
           {mediumData.map((article: any, index: number) => (
             <div key={index} className="">
-              <MediumCards
-                article={article}
-                className="hover:b-gradient-radial from-[#F7AB0A]"
-                ref={ref}
-              />
+              <MediumCards article={article} className="" ref={ref} />
             </div>
           ))}
         </div>
