@@ -28,14 +28,14 @@ const Blogs = (props: Props) => {
       <div className="p-4 flex justify-around mt-20 items-center">
         <div className="pb-10 md:grid md:grid-cols- lg:grid-cols-3 px-10 m-4">
           {mediumData.map((article: any, index: number) => (
-            <div key={index} className="">
+            <div key={index} className="hover:b-gradient-radial from-[#F7AB0A]">
               <MediumCards article={article} className="" ref={ref} />
             </div>
           ))}
         </div>
 
         {/* <div className="flex items-center"> */}
-        {/* <ArrowLongRightIcon className="h-10 text-[#F7AB0A]/80" /> */}
+        <ArrowLongRightIcon className="h-10 text-[#F7AB0A]/80" />
         {/* </div> */}
       </div>
     </div>
