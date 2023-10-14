@@ -26,7 +26,7 @@ const Blogs = (props: Props) => {
         Blogs
       </h1>
       <div className="p-4 flex justify-around mt-20 items-center absolute">
-        <div className="pb-10 md:grid md:grid-cols- lg:grid-cols-3 px-10 m-4">
+        <div className="pb-10 md:grid md:grid-cols- lg:grid-cols-3 md:px-10 md:m-4 sm:pl-0 sm:ml-0">
           {mediumData.map((article: any, index: number) => (
             <div key={index} className="">
               <MediumCards article={article} className="" ref={ref} />
@@ -35,7 +35,7 @@ const Blogs = (props: Props) => {
         </div>
 
         {/* <div className="flex items-center"> */}
-        <ArrowLongRightIcon className="h-10 text-[#F7AB0A]/80" />
+        {/* <ArrowLongRightIcon className="h-10 text-[#F7AB0A]/80" /> */}
         {/* </div> */}
       </div>
     </div>
