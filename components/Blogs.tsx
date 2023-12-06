@@ -20,6 +20,7 @@ const Blogs = (props: Props) => {
         setMediumData(response.items);
       });
   }, []);
+
   return (
     <div className="h-screen overflow-hidden md:overflow-visible m-4 relative">
       <h1 className="text-center uppercase tracking-[12px] md:tracking-[20px] text-gray-500 text-4xl md:text-5xl mt-24 md:pt-4">
@@ -27,11 +28,12 @@ const Blogs = (props: Props) => {
       </h1>
       <div className="p-4 flex justify-around mt-20 items-center absolute">
         <div className="pb-10 md:grid md:grid-cols- lg:grid-cols-3 md:px-10 md:m-4 sm:pl-0 sm:ml-0">
-          {mediumData.map((article: any, index: number) => (
-            <div key={index} className="">
-              <MediumCards article={article} className="" ref={ref} />
-            </div>
-          ))}
+          {mediumData &&
+            mediumData.map((article: any, index: number) => (
+              <div key={index} className="">
+                <MediumCards article={article} className="" ref={ref} />
+              </div>
+            ))}
         </div>
 
         {/* <div className="flex items-center"> */}
