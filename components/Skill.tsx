@@ -1,5 +1,6 @@
 import Image from "next/image";
 import React from "react";
+import { CardContainer } from "./ui/3d-cards";
 
 type Props = {};
 
@@ -109,7 +110,7 @@ const Skill = (props: Props) => {
       />
       <Image
         src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/PyTorch_logo_icon.svg/992px-PyTorch_logo_icon.svg.png?20200318225611"
-        alt="Python"
+        alt="PyTorch"
         width="40"
         height="40"
         className="ml-1.5 translation ease-in-out duration-300 transform hover:scale-110"
@@ -117,7 +118,7 @@ const Skill = (props: Props) => {
 
       <Image
         src="https://img.icons8.com/color/48/tensorflow.png"
-        alt="C"
+        alt="Tensorflow"
         width="50"
         height="50"
         className="translation ease-in-out duration-300 transform hover:scale-110"
@@ -131,7 +132,7 @@ const Skill = (props: Props) => {
       />
       <Image
         src="https://img.icons8.com/color/48/pandas.png"
-        alt="Numpy"
+        alt="Pandas"
         width="50"
         height="50"
         className="translation ease-in-out duration-300 transform hover:scale-110"

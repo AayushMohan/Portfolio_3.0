@@ -26,12 +26,12 @@ const About = (props: Props) => {
       />
 
       <div className="space-y-10 px-0 md:px-16 md:text-left text-center">
-        <h4 className="font-bold text-4xl m my-10">
+        <h4 className="font-bold text-4xl m my-10 text-gray-200">
           Here is a{" "}
           <span className="underline decoration-[#F7AB0A]/50">little</span>{" "}
           background
         </h4>
-        <p className="text-base leading-relaxed md:leading-loose">
+        <p className="text-base leading-relaxed md:leading-loose text-gray-300">
           Web developer with a passion for AI and ML, pursuing B.Tech in AI/ML.
           Strong foundation in web development with expertise in JavaScript,
           HTML, CSS, React, Node.js. Actively expanding knowledge in AI and ML.

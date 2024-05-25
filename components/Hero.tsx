@@ -30,11 +30,11 @@ const Hero = (props: Props) => {
 
       <div className="z-20">
         <h2 className="text-xs md:text-sm uppercase text-gray-500 pb-2 tracking-[3px] md:tracking-[10px]">
-          Web Developer <span className="text-[#F7AB0A] font-black">|</span> AI
-          & ML Enthusiast
+          Web Developer <span className="text-[#F7AB0A] font-black">|</span> ML
+          Enthusiast
         </h2>
 
-        <h1 className="text-[20px] lg:text-6xl font-bold px-10">
+        <h1 className="text-[18px] lg:text-4xl text-gray-100 font-bold px-4">
           <span className="mr-3">{text}</span>
           <Cursor cursorColor="#F7AB0A" />
         </h1>

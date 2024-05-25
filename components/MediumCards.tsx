@@ -1,8 +1,8 @@
-"use client";
 import Image from "next/image";
 import Link from "next/link";
 import DOMPurify from "dompurify";
 import moment from "moment";
+import { CardBody, CardContainer, CardItem } from "./ui/3d-cards";
 
 type Props = {};
 
@@ -12,41 +12,62 @@ const MediumCards = ({ article }: any) => {
     .replace(/<figcaption>.*<\/figcaption>/gi, "")
     .replace(/<[^>]+>/g, "");
 
+  // Extract image URL from the description using regex
+  const match = sanitizedDescription.match(/src="(.*?)"/);
+  const imageUrl = match ? match[1] : "";
+
   return (
-    <div className="h-screen">
-      <div className="rounded-lg border-2 border-[#F7AB0A]/50 mx-8 flex flex-col h-[450px] translation ease-in-out duration-500 transform hover:scale-110">
-        <div>
-          <Image
-            className="rounded-lg"
-            src={article.thumbnail}
-            alt={article.title}
-            width={500}
-            height={300}
-          />
-        </div>
-        <div className="p-4">
-          <Link href={article.link} target="_blank" rel="noopener noreferrer">
-            <h5 className="mb-2 text-xl font-semibold md:text-2xl">
-              {article.title}
-            </h5>
-          </Link>
-          <p
-            className="mb-3 font-normal dark:text-gray-400"
-            style={{
-              display: "-webkit-box",
-              WebkitLineClamp: 2,
-              WebkitBoxOrient: "vertical",
-              overflow: "hidden",
-              textOverflow: "ellipsis",
-            }}
-            dangerouslySetInnerHTML={{ __html: descriptionText }}
-          />
-          <p className="text-[#F7AB0A]/80">
-            {moment(article.pubDate).format("MMMM Do YYYY")}
-          </p>
-        </div>
+    <CardContainer>
+      <div className="inter-var">
+        <CardBody className="relative group/card dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[26rem] h-auto md:h-[31rem] rounded-xl p-6 border">
+          <CardItem translateZ="100" className="w-full mt-4">
+            <Image
+              className="h-60 w-full object-cover rounded-xl group-hover/card:shadow-xl"
+              src={imageUrl}
+              alt={article.title}
+              width={500}
+              height={300}
+            />
+          </CardItem>
+          <div className="p-4">
+            <CardItem
+              translateZ="50"
+              className="text-xl font-bold text-neutral-600 dark:text-white"
+            >
+              <Link
+                href={article.link}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <h5 className="mb-2 text-xl font-semibold md:text-2xl">
+                  {article.title}
+                </h5>
+              </Link>
+            </CardItem>
+            <CardItem
+              as="p"
+              translateZ="60"
+              className="text-neutral-500 text-sm max-w-sm mt-2 dark:text-neutral-300"
+            >
+              <p
+                className="mb-3 font-normal dark:text-gray-400"
+                style={{
+                  display: "-webkit-box",
+                  WebkitLineClamp: 2,
+                  WebkitBoxOrient: "vertical",
+                  overflow: "hidden",
+                  textOverflow: "ellipsis",
+                }}
+                dangerouslySetInnerHTML={{ __html: descriptionText }}
+              />
+              <p className="text-[#F7AB0A]/80">
+                {moment(article.pubDate).format("MMMM Do YYYY")}
+              </p>
+            </CardItem>
+          </div>
+        </CardBody>
       </div>
-    </div>
+    </CardContainer>
   );
 };
 

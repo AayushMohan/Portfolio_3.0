@@ -1,5 +1,5 @@
 "use client";
-import { Social } from "@/socials";
+import { Social } from "@/utils/socials";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { SocialIcon } from "react-social-icons";

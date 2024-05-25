@@ -20,11 +20,11 @@ const ContactMe = (props: Props) => {
 
   return (
     <div className="h-screen flex relative flex-col text-center md:text-left md:flex px-4 justify-evenly items-center mt-40">
-      <h3 className="uppercase tracking-[20px] text-gray-500 md:text-2xl text-xl">
+      <h3 className="uppercase tracking-[16px] text-gray-500 md:text-4xl text-xl">
         Contact Me
       </h3>
 
-      <div className="flex flex-col space-y-10">
+      <div className="flex flex-col space-y-10 text-gray-300">
         <h4 className="md:text-4xl text-lg font-semibold text-center">
           I have got just what you need.{" "}
           <span className="decoration-[#F7AB0A] underline animate-pulse">

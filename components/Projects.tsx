@@ -1,7 +1,7 @@
 "use client";
-import { Project } from "@/projects";
 import React, { useState } from "react";
 import { motion } from "framer-motion";
+import { Project } from "@/utils/projects";
 
 type Props = {
   projects: Project[];
@@ -21,7 +21,7 @@ const Projects = ({ projects }: Props) => {
         {projects?.map((projects, i) => (
           <div
             key={i}
-            className="w-screen flex-shrink-0 snap-center flex flex-col items-center justify-around p-4 md:py-48 h-screen"
+            className="w-screen flex-shrink-0 snap-center flex flex-col items-center justify-around p-4 h-screen"
           >
             <h3 className="uppercase tracking-[20px] text-gray-500 text-2xl md:text-4xl md:my-8 my-20">
               Projects
@@ -33,9 +33,9 @@ const Projects = ({ projects }: Props) => {
               viewport={{ once: true }}
               src={projects.imageUrl}
               alt={projects.name}
-              width="450"
-              height="450"
-              className="md:mr-0 rounded-lg md:w-[500px] md:h-[400px]"
+              width="100%"
+              height="100%"
+              className="md:mr-0 rounded-lg md:w-[40%] md:[h-50%]"
             />
 
             <div className="space-y-10 px-0 md:px-10 max-w-6xl md:pb-4">
@@ -56,8 +56,7 @@ const Projects = ({ projects }: Props) => {
                   <a
                     href={projects.liveUrl}
                     target="_blank"
-                    rel="noopener noreferrer"
-                    className="px-4 py-2 bg-[#F7AB0A]/50 text-white rounded hover:bg-[#F7AB0A] link_btn"
+                    className="px-4 py-2 bg-[#F7AB0A]/30 text-white rounded hover:bg-[#F7AB0A]/80 link_btn"
                   >
                     Live Demo
                   </a>
@@ -67,7 +66,7 @@ const Projects = ({ projects }: Props) => {
                     href={projects.codebaseUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="px-4 py-2 bg-gray-500 text-white rounded hover:bg-gray-600 link_btn"
+                    className="px-4 py-2 bg-slate-700/50 text-white rounded hover:bg-gray-600 link_btn"
                   >
                     Codebase
                   </a>

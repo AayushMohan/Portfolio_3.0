@@ -2,11 +2,11 @@ import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import About from "@/components/About";
 import Skills from "@/components/Skills";
-import projects from "../projects";
+import projects from "../utils/projects";
 import Projects from "@/components/Projects";
 import Blogs from "@/components/Blogs";
 import ContactMe from "@/components/ContactMe";
-import socials from "@/socials";
+import socials from "@/utils/socials";
 
 export default function Home({ post }: any) {
   return (
