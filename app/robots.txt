@@ -1,4 +1,0 @@
-Sitemap: https://aayushmohan.dev/sitemap.xml
-User-agent: *
-Allow: /*
-Disallow: /api/*
