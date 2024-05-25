@@ -35,12 +35,12 @@ const Blogs = () => {
   }, []);
 
   return (
-    <div className="max-h-screen overflow-y-scroll md:overflow-visible m-4 relative">
+    <div className="max-h-screen overflow-y-scroll md:overflow-visible md:m-4 mt-14 relative">
       <h1 className="text-center uppercase tracking-[12px] md:tracking-[20px] text-gray-500 text-4xl mt-24 md:pt-14">
         Blogs
       </h1>
       <div className="p-4 justify-around items-center">
-        <div className="pb-14 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:p-0">
+        <div className="pb-2 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:p-0">
           {mediumData &&
             mediumData.slice(0, numCards).map((article, index) => (
               <div key={index} className="w-full">

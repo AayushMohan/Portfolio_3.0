@@ -23,7 +23,7 @@ const Projects = ({ projects }: Props) => {
             key={i}
             className="w-screen flex-shrink-0 snap-center flex flex-col items-center justify-around p-4 h-screen"
           >
-            <h3 className="uppercase tracking-[20px] text-gray-500 text-2xl md:text-4xl md:my-8 my-20">
+            <h3 className="uppercase tracking-[20px] text-gray-500 text-2xl md:text-4xl md:my-8 mt-20 mb-4">
               Projects
             </h3>
             <motion.img
@@ -38,7 +38,7 @@ const Projects = ({ projects }: Props) => {
               className="md:mr-0 rounded-lg md:w-[40%] md:[h-50%]"
             />
 
-            <div className="space-y-10 px-0 md:px-10 max-w-6xl md:pb-4">
+            <div className="space-y-1 px-0 md:px-10 max-w-6xl md:pb-4 md:space-y-10">
               <h4 className="text-xl md:text-2xl font-semibold text-center">
                 <span className="underline decoration-[#F7AB0A]/50">
                   Case Study {i + 1} of {totalProjects} :{" "}
@@ -47,7 +47,7 @@ const Projects = ({ projects }: Props) => {
               </h4>
 
               <div></div>
-              <p className="text-md py-4 px-2 leading-relaxed text-center md:mx-16">
+              <p className="text-xs py-4 px-2 leading-relaxed text-center md:mx-16 md:text-base">
                 {projects.description}
               </p>
 
