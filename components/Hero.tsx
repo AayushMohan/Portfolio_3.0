@@ -14,7 +14,9 @@ const Hero = (props: Props) => {
       "<ButLovesToCodeMore />",
     ],
     loop: true,
-    delaySpeed: 200,
+    delaySpeed: 500,
+    typeSpeed: 70,
+    deleteSpeed: 50,
   });
   return (
     <div className="h-screen flex flex-col space-y-8 items-center justify-center text-center overflow-hidden">
