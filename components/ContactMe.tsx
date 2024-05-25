@@ -33,7 +33,7 @@ const ContactMe = (props: Props) => {
               <span className="decoration-[#F7AB0A] underline animate-pulse">
                 Let&apos;s Talk.
               </span>
-              <span className="absolute top-10 left-20 transform translate-x-1 mt-2 w-max p-2 text-sm text-white bg-gray-800/40 rounded opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+              <span className="hidden md:block absolute top-10 left-20 transform translate-x-1 mt-2 w-max p-2 text-sm text-white bg-gray-800/40 rounded opacity-0 transition-opacity duration-300 group-hover:opacity-100">
                 Click to schedule a meeting on Calendly
               </span>
             </span>

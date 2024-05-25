@@ -23,7 +23,7 @@ const Projects = ({ projects }: Props) => {
             key={i}
             className="w-screen flex-shrink-0 snap-center flex flex-col items-center justify-around p-4 h-screen"
           >
-            <h3 className="uppercase tracking-[20px] text-gray-500 text-2xl md:text-4xl md:my-8 mt-20 mb-4">
+            <h3 className="uppercase tracking-[20px] text-gray-500 text-2xl md:text-4xl md:my-8 md:mt-20 mt-14 md:mb-4">
               Projects
             </h3>
             <motion.img
@@ -47,7 +47,7 @@ const Projects = ({ projects }: Props) => {
               </h4>
 
               <div></div>
-              <p className="text-xs py-4 px-2 leading-relaxed text-center md:mx-16 md:text-base">
+              <p className="text-xs py-4 px-2 leading-loose text-center md:mx-16 md:text-base">
                 {projects.description}
               </p>
 
