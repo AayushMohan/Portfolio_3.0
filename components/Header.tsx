@@ -50,10 +50,10 @@ function Header({ socials }: Props) {
           network="email"
           fgColor="gray"
           bgColor="transparent"
-          // href="mailto:am@aayushmohan.dev"
-          // onClick={() => {
-          //   window.open("mailto:am@aayushmohan.dev");
-          // }}
+          href="mailto:am@aayushmohan.dev"
+          onClick={() => {
+            window.open("mailto:am@aayushmohan.dev");
+          }}
         />
         <Link href="#contact">
           <p className="uppercase hidden md:inline-flex text-sm text-gray-400">
