@@ -20,7 +20,6 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <DefaultSeo {...seoConfig} />
         <Meta />
       </head>
       <body className={open_sans.className}>{children}</body>
