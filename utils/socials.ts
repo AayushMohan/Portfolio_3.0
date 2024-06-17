@@ -24,7 +24,7 @@ const socials: Social[] = [
  {
   id: 4,
   name: 'Instagram',
-  url: 'https://www.instagram.com/thisisaayushmohan/',
+  url: 'https://www.instagram.com/aayush.mohan/',
  }
 ]
 
