@@ -8,7 +8,7 @@ import Meta from "@/components/Meta";
 const open_sans = Open_Sans({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Aayush Mohan's Portfolio",
+  title: "Aayush Mohan",
   description: "A Web Developer & Machine Learning Engineer",
 };
 
