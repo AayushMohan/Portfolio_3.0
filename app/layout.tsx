@@ -1,7 +1,7 @@
 import "./globals.css";
 import type { Metadata } from "next";
+import { Analytics } from "@vercel/analytics/next";
 import { DefaultSeo } from "next-seo";
-import seoConfig from "../next-seo.config";
 import { Open_Sans } from "next/font/google";
 import Meta from "@/components/Meta";
 
@@ -22,7 +22,10 @@ export default function RootLayout({
       <head>
         <Meta />
       </head>
-      <body className={open_sans.className}>{children}</body>
+      <body className={open_sans.className}>
+        {children}
+        <Analytics />
+      </body>
     </html>
   );
 }
