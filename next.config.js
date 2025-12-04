@@ -16,6 +16,10 @@ const nextConfig = {
       },
       {
         protocol: "https",
+        hostname: "assets.vercel.com",
+      },
+      {
+        protocol: "https",
         hostname: "upload.wikimedia.org",
       },
       {

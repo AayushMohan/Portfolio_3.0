@@ -1,6 +1,5 @@
 import Image from "next/image";
 import React from "react";
-import { CardContainer } from "./ui/3d-cards";
 
 type Props = {};
 
@@ -70,11 +69,12 @@ const Skill = (props: Props) => {
       />
 
       <Image
-        src="https://res.cloudinary.com/startup-grind/image/upload/c_fill,dpr_2.0,f_auto,g_center,q_auto:good/v1/gcs/platform-data-dsc/events/nextjs-boilerplate-logo.png"
-        alt="NextJS"
-        height="50"
-        width="50"
+        src="/images/logos/nextjs.svg"
+        alt="Next.js"
+        height={50}
+        width={50}
         className="translation ease-in-out duration-300 transform hover:scale-110"
+        priority
       />
 
       <Image
