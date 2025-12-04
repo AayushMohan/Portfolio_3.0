@@ -1,9 +1,8 @@
 import "./globals.css";
 import type { Metadata } from "next";
 import { Analytics } from "@vercel/analytics/next";
-import { DefaultSeo } from "next-seo";
 import { Open_Sans } from "next/font/google";
-import Meta from "@/components/Meta";
+import SeoProvider from "@/components/SeoProvider";
 
 const open_sans = Open_Sans({ subsets: ["latin"] });
 
@@ -19,10 +18,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <head>
-        <Meta />
-      </head>
+      <head></head>
       <body className={open_sans.className}>
+        <SeoProvider />
         {children}
         <Analytics />
       </body>
