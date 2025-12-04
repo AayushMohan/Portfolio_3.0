@@ -21,8 +21,11 @@ const Blogs = () => {
 
   useEffect(() => {
     const handleResize = () => {
-      if (window.innerWidth <= 768) {
+      const width = window.innerWidth;
+      if (width < 768) {
         setNumCards(1); // Small screens
+      } else if (width < 1024) {
+        setNumCards(2); // Medium screens
       } else {
         setNumCards(3); // Large screens
       }
