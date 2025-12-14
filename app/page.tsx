@@ -2,7 +2,6 @@ import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import About from "@/components/About";
 import Skills from "@/components/Skills";
-import projects from "../utils/projects";
 import Projects from "@/components/Projects";
 import Blogs from "@/components/Blogs";
 import ContactMe from "@/components/ContactMe";
@@ -26,7 +25,7 @@ export default function Home({ post }: any) {
       </section>
 
       <section id="projects" className="snap-start">
-        <Projects projects={projects} />
+        <Projects />
       </section>
 
       <section id="blogs" className="snap-center">
