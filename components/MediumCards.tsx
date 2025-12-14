@@ -21,13 +21,20 @@ const MediumCards = ({ article }: any) => {
       <div className="inter-var">
         <CardBody className="relative group/card dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[26rem] h-auto md:h-[31rem] rounded-xl p-6 border">
           <CardItem translateZ="100" className="w-full mt-4">
-            <Image
-              className="h-60 w-full object-cover rounded-xl group-hover/card:shadow-xl"
-              src={imageUrl}
-              alt={article.title}
-              width={500}
-              height={300}
-            />
+            {imageUrl ? (
+              <Image
+                className="h-60 w-full object-cover rounded-xl group-hover/card:shadow-xl"
+                src={imageUrl}
+                alt={article.title}
+                width={500}
+                height={300}
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+              />
+            ) : (
+              <div className="h-60 w-full rounded-xl bg-gradient-to-br from-neutral-800 to-neutral-700 flex items-center justify-center text-neutral-300">
+                No preview image
+              </div>
+            )}
           </CardItem>
           <div className="p-4">
             <CardItem

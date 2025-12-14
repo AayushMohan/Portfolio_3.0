@@ -32,14 +32,14 @@ const About = (props: Props) => {
           background
         </h4>
         <p className="text-sm md:text-base leading-[22px] md:leading-loose text-gray-300">
-          Web developer with a passion for AI and ML, pursuing B.Tech in AI/ML.
-          I offer professional web development services with expertise in
-          JavaScript, TypeScript, React, and Node.js. Alongside my development
-          work, I am actively exploring deep learning and its applications. I
-          thrive in fast-paced environments, enjoy tackling challenging
-          projects, and believe in continuous learning. Let&apos;s connect to
-          create innovative web solutions and explore the future of technology
-          together!
+          Web developer and AI engineer focused on building fast, reliable, and
+          thoughtfully designed digital products. I work with JavaScript,
+          TypeScript, React, Next.js, Node.js, and Python, and have hands-on
+          experience applying machine learning to real-world problems. Alongside
+          web development, I explore applied AI, automation, and mobile
+          development with React Native. I enjoy working in fast-paced
+          environments, solving meaningful problems, and continuously refining
+          both my technical skills and product thinking.
         </p>
       </div>
     </motion.div>
