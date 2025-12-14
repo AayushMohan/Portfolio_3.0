@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { useEffect, useState } from "react";
 import Link from "next/link";
 import DOMPurify from "dompurify";
 import moment from "moment";
@@ -15,16 +16,36 @@ const MediumCards = ({ article }: any) => {
   // Extract image URL from the description using regex
   const match = sanitizedDescription.match(/src="(.*?)"/);
   const imageUrl = match ? match[1] : "";
+  const [fallbackImage, setFallbackImage] = useState<string>("");
+
+  useEffect(() => {
+    if (!imageUrl && article?.link) {
+      const endpoint = `/api/medium-og?url=${encodeURIComponent(article.link)}`;
+      fetch(endpoint)
+        .then((r) => r.json())
+        .then((data) => {
+          if (data?.image) {
+            setFallbackImage(data.image);
+          }
+        })
+        .catch(() => {});
+    }
+  }, [imageUrl, article?.link]);
 
   return (
     <CardContainer>
       <div className="inter-var">
         <CardBody className="relative group/card dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[26rem] h-auto md:h-[31rem] rounded-xl p-6 border">
           <CardItem translateZ="100" className="w-full mt-4">
-            {imageUrl ? (
+            {imageUrl || fallbackImage ? (
               <Image
                 className="h-60 w-full object-cover rounded-xl group-hover/card:shadow-xl"
-                src={imageUrl}
+                src={(() => {
+                  const srcToUse = imageUrl || fallbackImage;
+                  return srcToUse.includes("medium.com")
+                    ? `/api/medium-image?url=${encodeURIComponent(srcToUse)}`
+                    : srcToUse;
+                })()}
                 alt={article.title}
                 width={500}
                 height={300}
